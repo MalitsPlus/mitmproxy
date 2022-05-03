@@ -430,7 +430,7 @@ class TransparentProxy:
 
     def __init__(
         self,
-        local: bool = True,
+        local: bool = False,
         forward: bool = True,
         proxy_port: int = 8080,
         filter: Optional[str] = "tcp.DstPort == 80 or tcp.DstPort == 443",
